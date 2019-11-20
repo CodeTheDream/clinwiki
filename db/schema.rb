@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_10_17_205457) do
+ActiveRecord::Schema.define(version: 2019_11_20_045639) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -36,6 +36,7 @@ ActiveRecord::Schema.define(version: 2019_10_17_205457) do
     t.boolean "partial_match"
     t.float "latitude"
     t.float "longitude"
+    t.datetime "checked"
   end
 
   create_table "reviews", force: :cascade do |t|
